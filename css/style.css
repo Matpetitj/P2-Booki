@@ -63,6 +63,7 @@ header {
 
 h1 {
     margin-bottom: 0px;
+    margin-top: 1px;
 }
 
 .soustitre {
@@ -111,6 +112,10 @@ h1 {
     display: none;
 }
 
+/*Filtres*/
+
+/*Couleur de fond quand je survole = bleu clair*/
+
 /*Footer*/
 
 .footer {
@@ -124,6 +129,7 @@ h1 {
     display: flex;
     padding-bottom: 30px;
     padding-top: 28px;
+    margin-left: -25%;
 }
 
 .text_footer ul {

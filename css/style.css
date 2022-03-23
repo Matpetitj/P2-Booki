@@ -114,7 +114,47 @@ h1 {
 
 /*Filtres*/
 
-/*Couleur de fond quand je survole = bleu clair*/
+.filtres {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.filtres h2 {
+    font-size: 100%;
+}
+
+.filtres3 {
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+    border: 3px solid var(--grey);
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 1s;
+}
+
+.filtres i {
+    background-color: var(--light-blue);
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    border-radius: 100%;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filtres .filtres3:hover {
+    transition: background-color 1s;
+    background-color: var(--light-blue);
+}
+
+.filtres .filtres3 .txt_filtre {
+    padding: 0px 10px;
+}
 
 /*Footer*/
 
@@ -198,5 +238,24 @@ h1 {
 
     .research_bar button .fa-search {
         display: block;
+    }
+
+    .filtres {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filtres3 {
+        margin-bottom: 5px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    #dog_filter {
+        margin-top: 5px;
     }
 }

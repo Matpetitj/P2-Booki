@@ -233,6 +233,17 @@ h1 {
     margin-right: 15px;
 }
 
+.icone_filtre:hover {
+    background-color: var(--light-blue);
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.filtres .icone_filtre:hover i {
+    background-color: #FFFFFF;
+    transition: background-color 0.5s;
+}
+
 /*Info*/
 
 .infos .fas {

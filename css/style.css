@@ -70,7 +70,7 @@ h1 {
     display: block;
     margin-bottom: 18px;
     font-size: 0.9em;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .research_bar {
@@ -83,8 +83,8 @@ h1 {
 .fa-map-marker-alt {
     display:inline-block;
     padding: 15px;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 19px;
+    padding-left: 19px;
     margin-right: 5px;
     height: 20px;
     background-color: var(--grey);
@@ -93,7 +93,7 @@ h1 {
 
 .barre_recherche {
     outline: none;
-    margin-left: -5px;
+    margin-left: 4px;
     border: none;
     font-weight: bold;
 }
@@ -112,7 +112,41 @@ h1 {
     display: none;
 }
 
-/*Filtres*/
+/*.titre_filtre {
+    font-weight: bold;
+    display: inline;
+}
+
+.filtre ul {
+    display: inline-flex;
+    padding: 0;
+}
+
+.icone_filtre {
+    display: inline-block;
+    font-weight: 700;
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+    padding: 0 20px 0 0;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.icone_filtre:hover {
+    cursor: pointer;
+    background-color: var(--light-blue);
+    transition: background-color 0.5s;
+}
+
+.filtre i {
+    background-color: var(--light-blue);
+    color: var(--blue);
+    border-radius: 100%;
+    padding: 18px;
+    margin-right: 15px;
+}
+
+2
 
 .filtres {
     display: flex;
@@ -154,21 +188,66 @@ h1 {
 
 .filtres .filtres3 .txt_filtre {
     padding: 0px 10px;
+}*/
+
+/*Filtres*/
+
+.filtres {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.titre_filtre {
+    display: flex;
+    font-size: 100%;
+}
+
+.list_filtre {
+    display: flex;
+    list-style: none;
+    padding: 4px;
+}
+
+.icone_filtre {
+    font-weight: 700;
+    padding: 0 20px 0 0;
+    margin: 0 10px;
+    border: 2px solid #e2e2e2;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.filtres i {
+    color: var(--blue);
+    background-color: var(--light-blue);
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
 }
 
 /*Info*/
 
 .infos .fas {
     color: var(--blue);
-    font-size: 16px;
-    padding: 7px 11px 7px 11px;
-    border: 1px solid var(--grey);
+    font-size: 14px;
+    padding: 5px 9px 5px 9px;
+    border: 1px solid #e2e2e2;
     border-radius: 100%;
     margin-right: 5px;
+    margin-top: 8px;
 }
 
 .infos p{
     display: inline;
+    font-size: 90%;
 }
 
 /*Footer*/
@@ -224,6 +303,7 @@ h1 {
     #logo {
         margin: auto;
         padding-left: 40%; /*déplacement du logo*/
+        width: 30%;
     }
 
     .list_top {
@@ -236,9 +316,22 @@ h1 {
         padding: 20px;
         margin: 0px;
         border-top: none; /*pour annuler le border top*/
-        border-bottom: 2px solid var(--grey); /*barre grise perma, pas de changement au :hover*/
+        border-bottom: 3px solid var(--grey); /*barre grise perma, pas de changement au :hover*/
         text-align: center;
-        
+        margin-bottom: 25px;
+        margin-top: -18px;
+    }
+
+    .lien_top a{
+        font-size: 95%;
+    }
+
+    .title_h1 {
+        margin-bottom: 15px;
+    }
+
+    .soustitre {
+        margin-bottom: 35px;
     }
 
     .research_bar button {
@@ -256,12 +349,24 @@ h1 {
     }
 
     .filtres {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .filtres3 {
-        margin-bottom: 5px;
+    .titre_filtre {
+        margin-top: 20px;
+        margin-bottom: -5px;
+    }
+    
+    .list_filtre {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .icone_filtre {
+        margin-bottom: 6px;
+        margin-left: -5px;
     }
 }
 
@@ -270,7 +375,16 @@ h1 {
         flex-wrap: wrap;
     }
 
+    .titre_filtre {
+        margin-top: 10px;
+        margin-bottom: -5px;
+    }
+
+    .list_filtre {
+        flex-wrap: wrap;
+    }
+
     #dog_filter {
-        margin-top: 5px;
+        margin-top: 6px;
     }
 }

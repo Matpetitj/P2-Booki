@@ -230,7 +230,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .icone_filtre:hover {
@@ -460,42 +460,31 @@ h1 {
 /*Footer*/
 
 .footer {
-    background-color: #F2F2F2;
-    padding: 0;
-    position: relative;
-}
-
-.text_footer {
-    justify-content: center;
+    background-color: var(--grey);
+    margin: 0px -50px;
+    padding: 35px 0px 35px 50px;
     display: flex;
-    padding-bottom: 30px;
-    padding-top: 28px;
-    margin-left: -25%;
 }
 
-.text_footer ul {
-    padding-left: 140px;
-    padding-right: 140px;
+.footer h2 {
+    margin-bottom: 0px;
 }
 
-.footer ul li {
-    list-style-type: none;
-    margin-top: 15px;
+.footer_column {
+    display: flex;
+    flex-direction: column;
+    margin-right: auto;
 }
 
-.footer ul li a {
+.footer_ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.li_footer a{
     text-decoration: none;
     color: black;
-}
-
-.titre_li_footer {
-    font-weight: 600;
-    font-size: 110%;
-    margin-bottom: 28px;
-}
-
-.li_footer {
-    font-size: 97%;
+    line-height: 35px;
 }
 
 @media screen and (max-width: 768px) {
@@ -575,6 +564,12 @@ h1 {
         margin-bottom: 6px;
         margin-left: -5px;
     }
+
+    /*Footer*/
+
+    .footer {
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -593,5 +588,17 @@ h1 {
 
     #dog_filter {
         margin-top: 6px;
+    }
+
+    /*Footer*/
+
+    .footer {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .footer_column {
+        width: auto;
+        margin-right: auto;
     }
 }

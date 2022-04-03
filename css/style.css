@@ -457,11 +457,86 @@ h1 {
     flex-direction: column;
 }*/
 
+/*Activités*/
+
+.activites {
+    margin: auto;
+    width: 102%;
+}
+
+.activites h2 {
+    margin-bottom: 20px;
+    font-weight: 800;
+    font-size: 118%;
+}
+
+.list_activites {
+    display: flex;
+}
+
+.list_activites article img {
+    width: 100%;
+    object-fit: cover;
+    height: calc(100% - 67px);
+    border-radius: 25px 25px 0 0;
+}
+
+.list_activites article {
+    margin-right: 30px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.199);
+    margin-bottom: 40px;
+}
+
+.simple {
+    display: flex;
+    width: 60%;
+    height: 60%;
+}
+
+.double {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+}
+
+.activite_1, .activite_4 {
+    width: auto;
+    height: 600px;
+}
+
+.activite_2 {
+    width: auto;
+    height: 300px;
+}
+
+.activite_3 {
+    width: auto;
+    height: 259px;
+}
+
+.activite_5, .activite_6 {
+    height: 280px;
+    width: auto;
+}
+.list_activites article h3 {
+    margin-left: 25px;
+    margin-top: 20px;
+    font-size: 90%;
+}
+
+.list_activites article:hover {
+    transform: scale(1.03);
+    transform: ease 0.4s;
+    cursor: pointer;
+}
+
 /*Footer*/
 
 .footer {
     background-color: var(--grey);
-    margin: 0px -50px;
+    margin: 35px -50px 0px -50px;
     padding: 35px 0px 35px 50px;
     display: flex;
 }
@@ -491,6 +566,8 @@ h1 {
     body {
         padding: 0px 20px;
     }
+
+    /*Header*/
 
     header {
         flex-direction: column; /*pour mettre le menu en colonne*/
@@ -530,6 +607,8 @@ h1 {
         margin-bottom: 35px;
     }
 
+    /*Recherche*/
+
     .research_bar button {
         border-radius: 15px;
         padding-bottom: 18px;
@@ -543,6 +622,8 @@ h1 {
     .research_bar button .fa-search {
         display: block;
     }
+
+    /*Filtres*/
 
     .filtres {
         display: flex;
@@ -565,6 +646,24 @@ h1 {
         margin-left: -5px;
     }
 
+    /*Activités*/
+
+    .list_activites {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .list_activites article {
+        width: 420px;
+        height: 250px;
+        margin-bottom: 20px;
+        margin-left: -15px;
+    }
+
+    .simple {
+        width: 600px;
+    }
+
     /*Footer*/
 
     .footer {
@@ -573,6 +672,9 @@ h1 {
 }
 
 @media screen and (max-width: 992px) {
+
+    /*Filtres*/
+
     .filtres {
         flex-wrap: wrap;
     }
@@ -588,6 +690,13 @@ h1 {
 
     #dog_filter {
         margin-top: 6px;
+    }
+
+    /*Activités*/
+
+    .list_activites {
+        height: auto;
+        width: auto;
     }
 
     /*Footer*/

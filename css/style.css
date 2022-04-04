@@ -248,12 +248,11 @@ h1 {
 
 .infos .fas {
     color: var(--blue);
-    font-size: 14px;
-    padding: 5px 9px 5px 9px;
+    font-size: 15px;
+    padding: 6px 10px 6px 10px;
     border: 1px solid #e2e2e2;
     border-radius: 100%;
-    margin-right: 5px;
-    margin-top: 8px;
+    margin: 8px 5px 30px 0px;
 }
 
 .infos p{
@@ -263,28 +262,24 @@ h1 {
 
 /*Hébergements*/
 
-#part_hebergement {
-    display: block;
-    margin-top: 30px;
-}
-
 .hebergements {
     display: flex;
     justify-content: space-between;
 }
 
-.titre_heb {
-    margin-top: 0px;
-    margin-bottom: 20px;
+.heb_marseille {
+    display: flex;
+    justify-content: space-between;
 }
 
 .conteneur {
+    position: relative;
     background-color: var(--grey);
     border-radius: 20px;
-    padding: 40px 40px 10px 45px;
+    padding: 40px 40px 80px 45px;
     box-sizing: content-box;
-    height: calc(100% - 120px);
-    width: 70%;
+    height: 84%;
+    width: 85%;
 }
 
 .list_heb {
@@ -293,60 +288,51 @@ h1 {
     justify-content: space-between;
 }
 
+.list_heb a {
+    color: black;
+    text-decoration: none;
+}
+
 .case_marseille {
     background: white;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: start;
-    border-radius: 20px;
     border: 5px solid transparent;
+    border-radius: 20px;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.199);
+    margin-bottom: 40px;
 }
 
 .contenu_article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin: 0px 0px 10px 10px;
+    margin: 0px 0px 0px 10px;
     width: 100%;
     height: 100%;
 }
 
 .case_marseille img {
-    width: 100%;
-    height: 100%;
+    height: 180px;
+    width: 340px;
     background-size: 100% 100%;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
-}
-
-.contenu_article h3 {
-    font-size: 90%;
-    margin-bottom: -8px;
-}
-
-.contenu_article p {
-    font-size: 80%;
-    margin-bottom: 8px;
 }
 
 .prix_gras {
     font-weight: bold;
 }
 
-.case_marseille:hover {
-    cursor: pointer;
-    transform: scale(1.03);
-    transform: ease 0.4s;
+.hebergements h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
 }
 
-.list_heb a {
-    width: 30%;
-    margin-bottom: 40px;
-    color: black;
-    text-decoration: none;
+.contenu_article h3 {
+    font-size: 90%;
+}
+
+.contenu_article p {
+    font-size: 80%;
 }
 
 .list_heb a article .fa-star.blue {
@@ -361,102 +347,92 @@ h1 {
     font-size: 80%;
 }
 
-#part_hebergement .heb_marseille .soustitre {
+.soustitre_heb {
     font-weight: bold;
-    font-size: 120%
+    position: absolute;
+    left: 50px;
+    bottom: 40px;
 }
 
-/*#part_hebergement {
-    display: flex;
-    margin-top: 30px;
+.case_marseille:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transform: ease 0.4s;
 }
-
-.hebergements {
-    display: flex;
-    justify-content: space-between;
-}
-
-#part_hebergement h2 {
-    margin-top: 0px;
-}
-
-.conteneur {
-    background-color: var(--grey);
-    padding: 20px 20px 10px 20px;
-    border-radius: 20px;
-    box-sizing: content-box;
-    height: calc(100% - 120px);
-}
-
-.list_heb {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.list_heb a article img {
-    width: 100%;
-    height: 100%;
-    border-radius: 25px 25px 0px 0px;
-    object-fit: cover;
-}
-
-.list_heb a article .contenu_article {
-    padding: 10px 10px 0px 10px;
-}
-
-.list_heb a article .contenu_article h3, .list_heb a article .contenu_article p {
-    margin: 6px;
-}
-
-#part_hebergement .heb_marseille {
-    width: 60%;
-}
-
-#part_hebergement .heb_marseille .soustitre {
-    font-weight: bold;
-    font-size: 120%;
-}*/
 
 /*Les plus populaires*/
 
-
-
-/*#part_hebergement .populaire .icone_stat {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-}
-
-#part_hebergement .populaire {
-    width: 35%;
+.populaire {
     position: relative;
+    width: 50%;
+    margin-left: -60px;
 }
 
-#part_hebergement .populaire .pop_list {
+.populaire .icone_stat {
+    position: absolute;
+    top: 40px;
+    right: 45px;
+    font-size: 120%;
+}
+
+.populaire .pop_list {
     flex-direction: column;
 }
 
-#part_hebergement .populaire .pop_list a{
-    width: 100%;
+.populaire .pop_list a{
+    width: 200px;
+    text-decoration: none;
+    color: black;
 }
 
-#part_hebergement .populaire .pop_list a article {
+.populaire .pop_list a article {
     display: flex;
     flex-direction: row;
 }
 
-#part_hebergement .populaire .pop_list a article img {
-    border-radius: 25px 0px 0px 25px;
-    width: 35%;
+.case_pop {
+    background: white;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    border: 5px solid transparent;
+    border-radius: 20px;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.199);
+    margin-bottom: 40px;
 }
 
-#part_hebergement .populaire .pop_list a article .contenu_article {
+.populaire .pop_list a article img {
+    border-radius: 20px 0px 0px 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.populaire .pop_list a article .contenu_article {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-}*/
+}
 
+.star .fa-star.blue {
+    color: var(--blue);
+}
+
+.star .fa-star.grey {
+    color: #e2e2e2;
+}
+
+.case_pop:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transform: ease 0.4s;
+}
 /*Activités*/
 
 .activites {
@@ -662,6 +638,10 @@ h1 {
 
     .simple {
         width: 600px;
+    }
+
+    #titre_activites {
+        margin-bottom: 25px;
     }
 
     /*Footer*/

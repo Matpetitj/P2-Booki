@@ -174,7 +174,7 @@ h1 {
     padding: 6px 10px 6px 10px;
     border: 1px solid #e2e2e2;
     border-radius: 100%;
-    margin: 8px 5px 30px 0px;
+    margin: 8px 5px 10px 0px;
 }
 
 .infos p{
@@ -187,6 +187,9 @@ h1 {
 .hebergements {
     display: flex;
     justify-content: space-between;
+    margin: auto;
+    margin-top: 20px;
+    height: auto;
 }
 
 .heb_marseille {
@@ -198,7 +201,7 @@ h1 {
     position: relative;
     background-color: var(--grey);
     border-radius: 20px;
-    padding: 40px 40px 80px 45px;
+    padding: 40px 40px 80px 40px;
     box-sizing: content-box;
     height: 78%;
     width: 85%;
@@ -341,7 +344,6 @@ h1 {
 
 .case_pop {
     background: white;
-    list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -486,8 +488,20 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+
+    #blockpage {
+        padding: 0px 0px;
+        margin: auto;
+        width: auto;
+        height: auto;
+    }
+
     body {
         padding: 0px 20px;
+    }
+
+    main {
+        padding: 0 40px;
     }
 
     /*Header*/
@@ -546,12 +560,6 @@ h1 {
         display: block;
     }
 
-    /*Infos*/
-
-    .infos p {
-        font-size: 74%;
-    }
-
     /*Filtres*/
 
     .filtres {
@@ -566,29 +574,54 @@ h1 {
     }
     
     .list_filtre {
-        flex-direction: column;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .icone_filtre {
         margin-bottom: 6px;
         margin-left: -5px;
     }
-
+    
     /*Hébergements*/
     
     .hebergements {
         display: flex;
-        flex-direction: column;
-    }
-
-    .hebergements .heb_marseille .conteneur {
-        background: none;
-        margin-left: -27px;
+        align-items: center;
+        justify-content: center;
+        margin-left: 35px;
+        padding-left: -100px;
     }
 
     .hebergements .case_marseille img {
-        height: 140px;
+        height: 120px;
+        width: 100%;
+    }
+
+    .heb_marseille .conteneur {
+        width: auto;
+    }
+
+    .case_marseille {
+        height: auto;
+        width: 260px;
+    }
+
+    .list_heb {
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    /*Populaire*/
+
+    .populaire {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .populaire .conteneur {
+        margin-left: 110px;
     }
 
     /*Activités*/
@@ -596,17 +629,19 @@ h1 {
     .list_activites {
         display: flex;
         flex-direction: column;
+        width: auto;
+        height: auto;
     }
 
     .list_activites article {
-        width: 420px;
+        width: 700px;
         height: 250px;
         margin-bottom: 20px;
-        margin-left: -15px;
     }
 
     .simple {
-        width: 600px;
+        display: flex;
+        flex-direction: column;
     }
 
     #titre_activites {
@@ -617,8 +652,17 @@ h1 {
 
     .footer {
         flex-direction: column;
+        padding-left: 10%;
     }
 }
+
+/*@media screen and (max-width: 414px) {
+
+}*/
+
+/*@media screen and (max-width: 375px) {
+
+}*/
 
 @media screen and (max-width: 992px) {
 
@@ -633,12 +677,59 @@ h1 {
         margin-bottom: -5px;
     }
 
-    .list_filtre {
-        flex-wrap: wrap;
+    /*Hébergements*/
+
+    .hebergements {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
     }
 
-    #dog_filter {
-        margin-top: 6px;
+    .heb_marseille .conteneur {
+        height: 100%;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        padding-bottom: 50px;
+        width: 85%;
+    }
+
+    /*Populaire*/
+
+    .populaire {
+        align-items: center;
+        width: 85%;
+        margin-left: -100px;
+    }
+
+    .populaire .conteneur {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .case_pop {
+        height: 135px;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .populaire .pop_list a article img {
+        height: 135px;
+    }
+
+    #star_1, #star_3 {
+        position: absolute;
+        bottom: 8px;
+    }
+
+    #star_2 {
+        position: absolute;
+        bottom: 8px;
     }
 
     /*Activités*/

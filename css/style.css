@@ -480,6 +480,91 @@ h1 {
     line-height: 35px;
 }
 
+@media screen and (max-width: 992px) {
+
+    /*Filtres*/
+
+    .filtres {
+        flex-wrap: wrap;
+    }
+
+    .titre_filtre {
+        margin-top: 10px;
+        margin-bottom: -5px;
+    }
+
+    /*Hébergements*/
+
+    .hebergements {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+    }
+
+    .heb_marseille .conteneur {
+        height: 100%;
+        margin-bottom: 30px;
+        margin-left: 15px;
+        padding-bottom: 50px;
+        width: 85%;
+    }
+
+    /*Populaire*/
+
+    .populaire {
+        align-items: center;
+        width: 85%;
+        margin-left: -100px;
+    }
+
+    .populaire .conteneur {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    .case_pop {
+        height: 135px;
+        align-items: flex-start;
+    }
+
+    .populaire .pop_list a article img {
+        height: 135px;
+    }
+
+    #star_1, #star_3 {
+        margin-top: 22px;
+    }
+
+    #star_2 {
+        margin-top: 20px;
+    }
+
+    /*Activités*/
+
+    .list_activites {
+        height: auto;
+        width: auto;
+    }
+
+    /*Footer*/
+
+    .footer {
+        justify-content: space-between;
+        display: flex;
+    }
+
+    .footer_column {
+        width: auto;
+        margin-right: auto;
+    }
+}
+
 @media screen and (max-width: 768px) {
 
     #blockpage {
@@ -659,7 +744,7 @@ h1 {
 @media screen and (max-width: 600px) {
 
     .heb_marseille .conteneur {
-        background-color: white;
+        background-color: transparent;
         padding-left: 3.5%;
     }
 
@@ -671,112 +756,97 @@ h1 {
         width: 450px;
     }
 
-    .populaire .conteneur {
-        width: 80%;
-    }
-
     .case_pop img {
         width: 115px;
     }
 
+    #star_2 {
+        margin-top: 0px;
+    }
+
     .list_activites article {
-        width: 480px;
+        width: 520px;
         height: 220px;
+        margin-left: -14px;
     }
     .footer {
         padding-left: 13%;
     }
 }
 
-/*@media screen and (max-width: 414px) {
+@media screen and (max-width: 414px) {
 
-}*/
+    .barre_recherche {
+        width: 63%;
+    }
+
+    .hebergements {
+        width: 130%;
+    }
+
+    .heb_marseille {
+        margin-left: -50px;
+    }
+
+    .heb_marseille .conteneur {
+        margin-bottom: -20px;
+    }
+
+    .case_marseille {
+        height: 240px;
+    }
+
+    .case_img article {
+        width: 360px;
+        height: 140px;
+    }
+
+    .populaire .conteneur {
+        width: 100%;
+        border-radius: 0px;
+        margin-left: 0px;
+        justify-content: flex-start;
+    }
+
+    .soustitre_heb {
+        left: 16px
+    }
+
+    .case_pop {
+        width: 355px;
+        position: relative;
+    }
+
+    .case_pop img {
+        width: 120px;
+    }
+
+    .case_pop .contenu_article h3, p {
+        margin-top: 10px;
+        font-size: 98%;
+    }
+
+    #star_2, #star_3 {
+        margin-top: 5px;
+    }
+
+    .activites h2 {
+        margin-left: -38px;
+    }
+
+    .list_activites article {
+        width: 380px;
+        height: 200px;
+        margin-left: -42px;
+    }
+
+    .footer {
+        padding-left: 18%;
+    }
+
+}
 
 /*@media screen and (max-width: 375px) {
 
 }*/
 
-@media screen and (max-width: 992px) {
-
-    /*Filtres*/
-
-    .filtres {
-        flex-wrap: wrap;
-    }
-
-    .titre_filtre {
-        margin-top: 10px;
-        margin-bottom: -5px;
-    }
-
-    /*Hébergements*/
-
-    .hebergements {
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        width: 98%;
-    }
-
-    .heb_marseille .conteneur {
-        height: 100%;
-        margin-bottom: 30px;
-        margin-left: 15px;
-        padding-bottom: 50px;
-        width: 85%;
-    }
-
-    /*Populaire*/
-
-    .populaire {
-        align-items: center;
-        width: 85%;
-        margin-left: -100px;
-    }
-
-    .populaire .conteneur {
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-bottom: 20px;
-        padding-bottom: 20px;
-    }
-
-    .case_pop {
-        height: 135px;
-        align-items: flex-start;
-    }
-
-    .populaire .pop_list a article img {
-        height: 135px;
-    }
-
-    #star_1, #star_3 {
-        margin-top: 22px;
-    }
-
-    #star_2 {
-        margin-top: 20px;
-    }
-
-    /*Activités*/
-
-    .list_activites {
-        height: auto;
-        width: auto;
-    }
-
-    /*Footer*/
-
-    .footer {
-        justify-content: space-between;
-        display: flex;
-    }
-
-    .footer_column {
-        width: auto;
-        margin-right: auto;
-    }
-}

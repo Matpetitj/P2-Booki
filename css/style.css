@@ -846,7 +846,39 @@ h1 {
 
 }
 
-/*@media screen and (max-width: 375px) {
+@media screen and (max-width: 375px) {
 
-}*/
+    .barre_recherche {
+        width: 58%;
+    }
+
+    .hébergements {
+        width: 100%;
+    }
+
+    .case_marseille {
+        height: 230px;
+    }
+
+    .case_img article {
+        width: 320px;
+    }
+
+    .populaire .conteneur {
+        width: 100%;
+    }
+
+    .case_pop {
+        width: 320px;
+    }
+
+    #star_1 {
+        margin-top: 5px;
+    }
+
+    .list_activites article {
+        width: 345px;
+    }
+
+}
 

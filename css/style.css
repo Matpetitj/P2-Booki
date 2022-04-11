@@ -34,28 +34,28 @@ header {
     margin-left: 20px;
 }
 
-.list_top {
+.list-top {
     display: flex;
     list-style-type: none;
     margin: 0;
 }
 
-.lien_top {
+.link-top {
     padding: 50px 25px;
     border-top: 4px solid transparent; /*créer un bord, le mettre transparent pour le retoucher après*/
     margin: 0px 20px 0px 20px;
 }
 
-.lien_top:hover {
+.link-top:hover {
     border-color: var(--blue);
 }
 
-.lien_top a{
+.link-top a{
     color: black;
     text-decoration: none;
 }
 
-.lien_top:hover a {
+.link-top:hover a {
     color: var(--blue);
 }
 
@@ -66,14 +66,14 @@ h1 {
     margin-top: 1px;
 }
 
-.titre .soustitre {
+.title .subtitle {
     display: block;
     margin-bottom: 18px;
     font-size: 0.9em;
     margin-top: 8px;
 }
 
-.research_bar {
+.research-bar {
     display: inline-block;
     border: 1px solid var(--grey);
     border-radius: 15px;
@@ -91,14 +91,14 @@ h1 {
     border-radius: 15px 0px 0px 15px; 
 }
 
-.barre_recherche {
+.bar-research {
     outline: none;
     margin-left: 4px;
     border: none;
     font-weight: bold;
 }
 
-.bouton_recherche {
+.button-research {
     background-color: var(--blue);
     color: #FFFFFF;
     border: none;
@@ -108,13 +108,13 @@ h1 {
     cursor: pointer;
 }
 
-.bouton_recherche i {
+.button-research i {
     display: none;
 }
 
 /*Filtres*/
 
-.filtres {
+.filters {
     display: inline-flex;
     flex-direction: row;
     align-items: center;
@@ -122,18 +122,18 @@ h1 {
     font-weight: bold;
 }
 
-.titre_filtre {
+.title-filter {
     display: flex;
     font-size: 100%;
 }
 
-.list_filtre {
+.list-filter {
     display: flex;
     list-style: none;
     padding: 4px;
 }
 
-.icone_filtre {
+.icon-filter {
     font-weight: 700;
     padding: 0 20px 0 0;
     margin: 0 10px;
@@ -143,7 +143,7 @@ h1 {
     align-items: center;
 }
 
-.filtres i {
+.filters i {
     color: var(--blue);
     background-color: var(--light-blue);
     border-radius: 100%;
@@ -155,13 +155,13 @@ h1 {
     margin-right: 10px;
 }
 
-.icone_filtre:hover {
+.icon-filter:hover {
     background-color: var(--light-blue);
     cursor: pointer;
     transition: background-color 0.5s;
 }
 
-.filtres .icone_filtre:hover i {
+.filters .icon-filter:hover i {
     background-color: #FFFFFF;
     transition: background-color 0.5s;
 }
@@ -184,7 +184,7 @@ h1 {
 
 /*Hébergements*/
 
-.hebergements {
+.accomodations {
     display: flex;
     justify-content: space-between;
     margin: auto;
@@ -192,12 +192,12 @@ h1 {
     height: auto;
 }
 
-.heb_marseille {
+.accom-marseille {
     display: flex;
     justify-content: space-between;
 }
 
-.conteneur {
+.container {
     position: relative;
     background-color: var(--grey);
     border-radius: 20px;
@@ -207,18 +207,18 @@ h1 {
     width: 85%;
 }
 
-.list_heb {
+.list-accom {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.list_heb a {
+.list-accom a {
     color: black;
     text-decoration: none;
 }
 
-.case_marseille {
+.case-marseille {
     background: white;
     border: 5px solid transparent;
     border-radius: 20px;
@@ -228,12 +228,12 @@ h1 {
     height: 270px;
 }
 
-.case_img article{
+.case-img article{
     height: 170px;
     width: 340px;
 }
 
-.case_marseille .case_img article img {
+.case-marseille .case-img article img {
     width: 100%;
     height: 100%;
     background-size: 100% 100%;
@@ -241,12 +241,12 @@ h1 {
     object-fit: cover;
 }
 
-.case_marseille:hover {
+.case-marseille:hover {
     cursor: pointer;
     transform: scale(1.03);
-    transform: ease 0.4s;
+    transition: ease 0.4s;
 }
-.contenu_article {
+.content-article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -254,77 +254,77 @@ h1 {
     line-height: 5px;
 }
 
-.contenu_article h3 {
+.content-article h3 {
     font-size: 105%;
 }
 
-.contenu_article p {
+.content-article p {
     font-size: 85%;
 }
 
-.contenu_article p{
+.content-article p{
     margin-top: 6px;
     margin-bottom: 15px;
 }
 
-.hebergements h2 {
+.accomodations h2 {
     margin-top: 0px;
     margin-bottom: 20px;
 }
 
-.list_heb a article .fa-star.blue {
+.list-accom a article .fa-star.blue {
     color: var(--blue);
 }
 
-.list_heb a article .fa-star.grey {
+.list-accom a article .fa-star.grey {
     color: #e2e2e2;
 }
 
-.contenu_article .star {
+.content-article .star {
     font-size: 80%;
 }
 
-.soustitre_heb:hover {
+.subtitle-accom:hover {
     cursor: pointer;
 }
 
-.soustitre_heb {
+.subtitle-accom {
     font-weight: bold;
     position: absolute;
     left: 50px;
     bottom: 40px;
 }
 
-.prix_gras {
+.price-gras {
     font-weight: bold;
 }
 
 /*Les plus populaires*/
 
-.populaire {
+.famous {
     position: relative;
     width: 50%;
     margin-left: -60px;
     height: auto;
 }
 
-.populaire .icone_stat {
+.famous .icon-stat {
     position: absolute;
     top: 40px;
     right: 45px;
     font-size: 120%;
 }
 
-.populaire .pop_list {
+.famous .pop-list {
     flex-direction: column;
 }
 
-.populaire .pop_list a{
+.famous .pop-list a{
     text-decoration: none;
     color: black;
 }
 
-.case_pop {
+.case-pop {
     background: white;
     display: flex;
     flex-direction: row;
@@ -337,7 +337,7 @@ h1 {
     height: 175px;;
 }
 
-.case_pop img {
+.case-pop img {
     border-radius: 20px 0px 0px 20px;
     display: flex;
     align-items: center;
@@ -346,7 +346,7 @@ h1 {
     object-fit: cover;
 }
 
-.case_pop .contenu_article {
+.case-pop .content-article {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -354,10 +354,10 @@ h1 {
     position: relative;
 }
 
-.case_pop:hover {
+.case-pop:hover {
     cursor: pointer;
     transform: scale(1.03);
-    transform: ease 0.4s;
+    transition: ease 0.4s;
 }
 
 .star .fa-star.blue {
@@ -368,38 +368,38 @@ h1 {
     color: #e2e2e2;
 }
 
-.case_pop .contenu_article .star {
+.case-pop .content-article .star {
     margin-top: 32px;
 }
 
-#star_1, #star_3 {
+#star-1, #star-3 {
     margin-top: 50px;
 }
 
 /*Activités*/
 
-.activites {
+.activities {
     width: 102%;
 }
 
-.activites h2 {
+.activities h2 {
     margin-bottom: 20px;
     font-weight: 800;
     font-size: 118%;
 }
 
-.list_activites {
+.list-activities {
     display: flex;
 }
 
-.list_activites article img {
+.list-activities article img {
     width: 100%;
     object-fit: cover;
     height: calc(100% - 67px);
     border-radius: 25px 25px 0 0;
 }
 
-.list_activites article {
+.list-activities article {
     margin-right: 30px;
     border-radius: 25px;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.199);
@@ -419,34 +419,34 @@ h1 {
     height: 60%;
 }
 
-.activite_1, .activite_4 {
+.activity-1, .activity-4 {
     width: auto;
     height: 600px;
 }
 
-.activite_2 {
+.activity-2 {
     width: auto;
     height: 300px;
 }
 
-.activite_3 {
+.activity-3 {
     width: auto;
     height: 259px;
 }
 
-.activite_5, .activite_6 {
+.activity-5, .activity-6 {
     height: 280px;
     width: auto;
 }
-.list_activites article h3 {
+.list-activities article h3 {
     margin-left: 25px;
     margin-top: 20px;
     font-size: 90%;
 }
 
-.list_activites article:hover {
+.list-activities article:hover {
     transform: scale(1.03);
-    transform: ease 0.4s;
+    transition: ease 0.4s;
     cursor: pointer;
 }
 
@@ -463,18 +463,18 @@ h1 {
     margin-bottom: 0px;
 }
 
-.footer_column {
+.footer-column {
     display: flex;
     flex-direction: column;
     margin-right: auto;
 }
 
-.footer_ul {
+.footer-ul {
     list-style: none;
     padding: 0px;
 }
 
-.li_footer a{
+.li-footer a{
     text-decoration: none;
     color: black;
     line-height: 35px;
@@ -484,25 +484,25 @@ h1 {
 
     /*Filtres*/
 
-    .filtres {
+    .filters {
         flex-wrap: wrap;
     }
 
-    .titre_filtre {
+    .title-filter {
         margin-top: 10px;
         margin-bottom: -5px;
     }
 
     /*Hébergements*/
 
-    .hebergements {
+    .accomodations {
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
         width: 98%;
     }
 
-    .heb_marseille .conteneur {
+    .accom-marseille .container {
         height: 100%;
         margin-bottom: 30px;
         margin-left: 15px;
@@ -512,13 +512,13 @@ h1 {
 
     /*Populaire*/
 
-    .populaire {
+    .famous {
         align-items: center;
         width: 85%;
         margin-left: -100px;
     }
 
-    .populaire .conteneur {
+    .famous .container {
         width: 100%;
         height: auto;
         display: flex;
@@ -528,26 +528,26 @@ h1 {
         padding-bottom: 20px;
     }
 
-    .case_pop {
+    .case-pop {
         height: 135px;
         align-items: flex-start;
     }
 
-    .populaire .pop_list a article img {
+    .famous .pop-list a article img {
         height: 135px;
     }
 
-    #star_1, #star_3 {
+    #star-1, #star-3 {
         margin-top: 22px;
     }
 
-    #star_2 {
+    #star-2 {
         margin-top: 20px;
     }
 
     /*Activités*/
 
-    .list_activites {
+    .list-activities {
         height: auto;
         width: auto;
     }
@@ -559,7 +559,7 @@ h1 {
         display: flex;
     }
 
-    .footer_column {
+    .footer-column {
         width: auto;
         margin-right: auto;
     }
@@ -594,12 +594,12 @@ h1 {
         width: 30%;
     }
 
-    .list_top {
+    .list-top {
         margin: 0px -20px;
         padding: 0;
     }
 
-    .lien_top {
+    .link-top {
         width: 50%;
         padding: 20px;
         margin: 0px;
@@ -610,115 +610,114 @@ h1 {
         margin-top: -18px;
     }
 
-    .lien_top a{
+    .link-top a{
         font-size: 95%;
     }
 
-    .title_h1 {
+    .title-h1 {
         margin-bottom: 15px;
     }
 
-    .soustitre {
+    .subtitle {
         margin-bottom: 35px;
     }
 
     /*Recherche*/
 
-    .research_bar button {
+    .research-bar button {
         border-radius: 15px;
         padding-bottom: 18px;
 
     }
 
-    .research_bar button span {
+    .research-bar button span {
         display: none;
     }
 
-    .research_bar button .fa-search {
+    .research-bar button .fa-search {
         display: block;
     }
 
     /*Filtres*/
 
-    .filtres {
+    .filters {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .titre_filtre {
+    .title-filter {
         margin-top: 20px;
         margin-bottom: -5px;
     }
     
-    .list_filtre {
+    .list-filter {
         align-items: flex-start;
         flex-wrap: wrap;
     }
 
-    .icone_filtre {
+    .icon-filter {
         margin-bottom: 6px;
         margin-left: -5px;
     }
     
     /*Hébergements*/
     
-    .hebergements {
+    .accomodations {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding-left: -100px;
     }
 
-    .heb_marseille .conteneur {
+    .accom-marseille .container {
         width: auto;
     }
 
-    .case_marseille {
+    .case-marseille {
         height: 270px;
         width: auto;
     }
 
-    .case_img article {
+    .case-img article {
         width: 250px;
     }
 
-    .hebergements .case_marseille img {
+    .accomodations .case-marseille img {
         height: 100%;
         width: 100%;
     }
 
-    .list_heb {
+    .list-accom {
         align-items: center;
         flex-wrap: wrap;
     }
 
     /*Populaire*/
 
-    .populaire {
+    .famous {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .populaire .conteneur {
+    .famous .container {
         margin-left: 110px;
     }
 
     /*Activités*/
 
-    .activites {
+    .activities {
         margin-left: 18px;
     }
 
-    .list_activites {
+    .list-activities {
         display: flex;
         flex-direction: column;
         width: auto;
         height: auto;
     }
 
-    .list_activites article {
+    .list-activities article {
         width: 660px;
         height: 250px;
         margin-bottom: 20px;
@@ -729,7 +728,7 @@ h1 {
         flex-direction: column;
     }
 
-    #titre_activites {
+    #title-activities {
         margin-bottom: 25px;
     }
 
@@ -743,28 +742,28 @@ h1 {
 
 @media screen and (max-width: 600px) {
 
-    .heb_marseille .conteneur {
+    .accom-marseille .container {
         background-color: transparent;
         padding-left: 3.5%;
     }
 
-    .list_heb {
+    .list-accom {
         align-items: center;
     }
 
-    .case_img article {
+    .case-img article {
         width: 450px;
     }
 
-    .case_pop img {
+    .case-pop img {
         width: 115px;
     }
 
-    #star_2 {
+    #star-2 {
         margin-top: 0px;
     }
 
-    .list_activites article {
+    .list-activities article {
         width: 520px;
         height: 220px;
         margin-left: -14px;
@@ -776,65 +775,65 @@ h1 {
 
 @media screen and (max-width: 414px) {
 
-    .barre_recherche {
+    .bar-research {
         width: 63%;
     }
 
-    .hebergements {
+    .accomodations {
         width: 130%;
     }
 
-    .heb_marseille {
+    .accom-marseille {
         margin-left: -50px;
     }
 
-    .heb_marseille .conteneur {
+    .accom-marseille .container {
         margin-bottom: -20px;
     }
 
-    .case_marseille {
+    .case-marseille {
         height: 240px;
     }
 
-    .case_img article {
+    .case-img article {
         width: 360px;
         height: 140px;
     }
 
-    .populaire .conteneur {
+    .famous .container {
         width: 100%;
         border-radius: 0px;
         margin-left: 0px;
         justify-content: flex-start;
     }
 
-    .soustitre_heb {
+    .subtitle-accom {
         left: 16px
     }
 
-    .case_pop {
+    .case-pop {
         width: 355px;
         position: relative;
     }
 
-    .case_pop img {
+    .case-pop img {
         width: 120px;
     }
 
-    .case_pop .contenu_article h3, p {
+    .case-pop .content-article h3, p {
         margin-top: 10px;
         font-size: 98%;
     }
 
-    #star_2, #star_3 {
+    #star-2, #star-3 {
         margin-top: 5px;
     }
 
-    .activites h2 {
+    .activities h2 {
         margin-left: -38px;
     }
 
-    .list_activites article {
+    .list-activities article {
         width: 380px;
         height: 200px;
         margin-left: -42px;
@@ -848,7 +847,7 @@ h1 {
 
 @media screen and (max-width: 375px) {
 
-    .barre_recherche {
+    .bar-research {
         width: 58%;
     }
 
@@ -856,27 +855,27 @@ h1 {
         width: 100%;
     }
 
-    .case_marseille {
+    .case-marseille {
         height: 230px;
     }
 
-    .case_img article {
+    .case-img article {
         width: 320px;
     }
 
-    .populaire .conteneur {
+    .famous .container {
         width: 100%;
     }
 
-    .case_pop {
+    .case-pop {
         width: 320px;
     }
 
-    #star_1 {
+    #star-1 {
         margin-top: 5px;
     }
 
-    .list_activites article {
+    .list-activities article {
         width: 345px;
     }
 

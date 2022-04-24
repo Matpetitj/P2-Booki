@@ -123,7 +123,6 @@ h1 {
 }
 
 .title-filter {
-    display: flex;
     font-size: 100%;
 }
 
@@ -252,10 +251,7 @@ h1 {
 }
 
 .content-article p {
-    font-size: 85%;
-}
-
-.content-article p{
+    font-size: 85%;    
     margin-top: 6px;
     margin-bottom: 15px;
 }
@@ -306,10 +302,6 @@ h1 {
     top: 40px;
     right: 45px;
     font-size: 120%;
-}
-
-.famous .pop-list {
-    flex-direction: column;
 }
 
 .famous .pop-list a{
@@ -557,13 +549,6 @@ h1 {
         top: 110px;
     }
 
-    /*Activités*/
-
-    .list-activities {
-        height: auto;
-        width: auto;
-    }
-
     /*Footer*/
 
     .footer {
@@ -652,12 +637,6 @@ h1 {
 
     /*Filtres*/
 
-    .filters {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
     .title-filter {
         margin-top: 20px;
         margin-bottom: -5px;
@@ -687,7 +666,6 @@ h1 {
 
     .case-marseille {
         height: 270px;
-        width: auto;
     }
 
     .case-img article {
@@ -709,11 +687,10 @@ h1 {
     .famous {
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .famous .container {
-        margin-left: 110px;
+        margin-left: 20%;
     }
 
     /*Activités*/
@@ -725,8 +702,6 @@ h1 {
     .list-activities {
         display: flex;
         flex-direction: column;
-        width: auto;
-        height: auto;
     }
 
     .list-activities article {
@@ -736,7 +711,6 @@ h1 {
     }
 
     .simple {
-        display: flex;
         flex-direction: column;
     }
 
@@ -761,6 +735,10 @@ h1 {
 
     .list-accom {
         align-items: center;
+    }
+
+    .subtitle-accom {
+        left: 15px;
     }
 
     .case-img article {
@@ -795,6 +773,18 @@ h1 {
         margin-left: -30px;
         width: 445px;
     }
+
+    .accom-marseille {
+        margin-left: 10px;
+    }
+
+    .famous .container {
+        margin-left: 29%;
+    }
+
+    .activities {
+        margin-left: 10px;
+    }
 }
 
 @media screen and (max-width: 414px) {
@@ -809,6 +799,14 @@ h1 {
 
     .accom-marseille {
         margin-left: -22%;
+    }
+
+    .accomodations h2 {
+        margin-left: 45px;
+    }
+
+    .subtitle-accom {
+        left: 14%;
     }
 
     .case-marseille {

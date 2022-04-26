@@ -42,7 +42,7 @@ header {
 
 .link-top {
     padding: 50px 25px;
-    border-top: 4px solid transparent; /*créer un bord, le mettre transparent pour le retoucher après*/
+    border-top: 4px solid transparent;
     margin: 0px 20px 0px 20px;
 }
 
@@ -582,12 +582,12 @@ h1 {
     /*Header*/
 
     header {
-        flex-direction: column; /*pour mettre le menu en colonne*/
+        flex-direction: column; 
     }
 
     #logo {
         margin: auto;
-        padding-left: 40%; /*déplacement du logo*/
+        padding-left: 40%; 
         width: 30%;
     }
 
@@ -600,8 +600,8 @@ h1 {
         width: 50%;
         padding: 20px;
         margin: 0px;
-        border-top: none; /*pour annuler le border top*/
-        border-bottom: 3px solid var(--grey); /*barre grise perma, pas de changement au :hover*/
+        border-top: none; 
+        border-bottom: 3px solid var(--grey); 
         text-align: center;
         margin-bottom: 25px;
         margin-top: -18px;
